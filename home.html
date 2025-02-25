@@ -4,24 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUi Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h2 class="text-3xl font-bold text-center text-red-500 mt-5">
-      This is home
-    </h2>
+    <!-- <h2 class="text-2xl font-bold text-center text-red-5">This is home</h2> -->
     <form action="index.html">
-      <section>
-        <div class="flex">
+      <section class="mx-24">
+        <div class="flex justify-between my-10">
+          <div class="flex">
             <div>
-                <img src="assets/Group.png" alt="">
+              <img src="assets/Group.png" alt="" />
             </div>
             <div>
-                <h1 class="font-bold text-3xl">$ 45000</h1>
-                <p class="text-gray-300">Available Balance</p>
+              <h1 class="font-bold text-3xl">$ 45000</h1>
+              <p class="text-gray-300">Available Balance</p>
             </div>
-        </div>
-        <div class="form-control mt-6">
-          <button class="btn btn-primary">Login</button>
+          </div>
+          <div class="form-control mt-6">
+            <button class="btn btn-primary">Log OUT</button>
+          </div>
         </div>
       </section>
     </form>
