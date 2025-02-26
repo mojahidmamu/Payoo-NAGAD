@@ -16,6 +16,7 @@
   </head>
   <body>
     <h2 class="font-bold text-3xl text-center my-5">TRANSFER MONEY</h2>
+    <h1 id="balance" class="font-bold text-3xl my-5 text-center"></h1>
     <section class="mx-10">
       <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse">
@@ -25,11 +26,12 @@
           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <form class="card-body" action="home.html">
               <div class="form-control">
-                <label id="accountNumber" class="label">
-                  <span id="accountNumber" class="label-text">User Acount Number</span>
+                <label class="label">
+                  <span class="label-text">User Acount Number</span>
                 </label>
                 <input
-                type="password"
+                  id="accountNumber"
+                  type="password"
                   placeholder="Enter 11 digit number"
                   class="input input-bordered"
                   required
@@ -40,17 +42,19 @@
                   <span class="label-text">Amount</span>
                 </label>
                 <input
-                type="password"
+                  id="amount"
+                  type="password"
                   placeholder="Add amount to transfer"
                   class="input input-bordered"
                   required
                 />
               </div>
               <div class="form-control">
-                <label id="pin" class="label">
-                  <span id="pin" class="label-text">PIN Number</span>
+                <label class="label">
+                  <span class="label-text">PIN Number</span>
                 </label>
                 <input
+                  id="pin"
                   type="password"
                   placeholder="Enter 4 digit pin number"
                   class="input input-bordered"
@@ -63,7 +67,9 @@
                 </label>
               </div>
               <div class="form-control mt-6">
-                <button id="transferBtn" class="btn btn-primary">Send Now</button>
+                <button id="transferBtn" class="btn btn-primary">
+                  Send Now
+                </button>
                 <button class="btn btn-outline cursor-pointer my-5">
                   Go Home
                 </button>

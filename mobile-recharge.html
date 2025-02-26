@@ -16,6 +16,7 @@
   </head>
   <body>
     <h2 class="font-bold text-3xl text-center my-5">PAY BILL</h2>
+    <h1 id="balance" class="font-bold text-3xl my-5 text-center"></h1>
     <section class="mx-10">
       <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse">
@@ -29,7 +30,7 @@
                   <span class="label-text">Select to Pay </span>
                 </label>
                 <input
-                type="text"
+                  type="text"
                   placeholder="Select one"
                   class="input input-bordered"
                   required
@@ -37,10 +38,13 @@
               </div>
               <div class="form-control">
                 <label id="accountNumber" class="label">
-                  <span id="accountNumber" class="label-text">Biller Account Number</span>
+                  <span id="accountNumber" class="label-text"
+                    >Biller Account Number</span
+                  >
                 </label>
                 <input
-                type="password"
+                  id="accountNumber"
+                  type="password"
                   placeholder="Enter account number"
                   class="input input-bordered"
                   required
@@ -51,7 +55,8 @@
                   <span class="label-text">Amount to Pay</span>
                 </label>
                 <input
-                type="password"
+                  id="amount"
+                  type="password"
                   placeholder="Add Amount to pay"
                   class="input input-bordered"
                   required
@@ -62,6 +67,7 @@
                   <span id="pin" class="label-text">PIN Number</span>
                 </label>
                 <input
+                  id="pin"
                   type="password"
                   placeholder="Enter 4 digit pin number"
                   class="input input-bordered"
@@ -74,7 +80,9 @@
                 </label>
               </div>
               <div class="form-control mt-6">
-                <button id="payBillBtn" class="btn btn-primary">Cash OUT</button>
+                <button id="payBillBtn" class="btn btn-primary">
+                  Cash OUT
+                </button>
                 <button class="btn btn-outline cursor-pointer my-5">
                   Go Home
                 </button>
