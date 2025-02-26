@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>send-money.html</title>
+    <title>Add-Money</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- DaisyUi Link -->
@@ -15,41 +15,62 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h3>send-money.html</h3>
-    <section>
-      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-        <form class="card-body">
-          <div class="form-control">
-            <label class="label">
-              <span class="label-text">Email</span>
-            </label>
-            <input
-              type="email"
-              placeholder="email"
-              class="input input-bordered"
-              required
-            />
+    <h2 class="font-bold text-3xl text-center my-5">CASH OUT</h2>
+    <section class="mx-10">
+      <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="text-center lg:text-left">
+            <h1 class="text-5xl font-bold">Cash Out !</h1>
           </div>
-          <div class="form-control">
-            <label class="label">
-              <span class="label-text">Password</span>
-            </label>
-            <input
-              type="password"
-              placeholder="password"
-              class="input input-bordered"
-              required
-            />
-            <label class="label">
-              <a href="#" class="label-text-alt link link-hover"
-                >Forgot password?</a
-              >
-            </label>
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body" action="home.html">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Agent Number</span>
+                </label>
+                <input
+                type="password"
+                  placeholder="Enter 11 digit number"
+                  class="input input-bordered"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Amount</span>
+                </label>
+                <input
+                type="password"
+                  placeholder="Add amount to withdraw"
+                  class="input input-bordered"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">PIN Number</span>
+                </label>
+                <input
+                  type="password"
+                  placeholder="Enter 4 digit pin number"
+                  class="input input-bordered"
+                  required
+                />
+                <label class="label">
+                  <a href="#" class="label-text-alt link link-hover"
+                    >Forgot PIN ?</a
+                  >
+                </label>
+              </div>
+              <div class="form-control mt-6">
+                <button class="btn btn-primary">Cash OUT</button>
+                <button class="btn btn-outline cursor-pointer my-5">
+                  Go Home
+                </button>
+              </div>
+            </form>
           </div>
-          <div class="form-control mt-6">
-            <button class="btn btn-primary">Login</button>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
   </body>
