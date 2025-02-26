@@ -25,8 +25,8 @@
           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <form class="card-body" action="home.html">
               <div class="form-control">
-                <label class="label">
-                  <span class="label-text">User Acount Number</span>
+                <label id="accountNumber" class="label">
+                  <span id="accountNumber" class="label-text">User Acount Number</span>
                 </label>
                 <input
                 type="password"
@@ -47,8 +47,8 @@
                 />
               </div>
               <div class="form-control">
-                <label class="label">
-                  <span class="label-text">PIN Number</span>
+                <label id="pin" class="label">
+                  <span id="pin" class="label-text">PIN Number</span>
                 </label>
                 <input
                   type="password"
@@ -63,7 +63,7 @@
                 </label>
               </div>
               <div class="form-control mt-6">
-                <button class="btn btn-primary">Send Now</button>
+                <button id="transferBtn" class="btn btn-primary">Send Now</button>
                 <button class="btn btn-outline cursor-pointer my-5">
                   Go Home
                 </button>
@@ -73,5 +73,6 @@
         </div>
       </div>
     </section>
+    <script src="transfer-money.js"></script>
   </body>
 </html>
