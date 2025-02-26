@@ -16,6 +16,7 @@
   </head>
   <body>
     <h2 class="font-bold text-3xl text-center my-5">Add Money</h2>
+    <h1 id="balance" class="font-bold text-3xl"></h1>
     <section class="mx-10">
       <div class="hero bg-base-200 min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse">
@@ -48,7 +49,7 @@
               </div>
               <div class="form-control">
                 <label class="label">
-                  <span class="label-text">Amount to Add</span>
+                  <span id="amount" class="label-text">Amount to Add</span>
                 </label>
                 <input
                   type="password"
@@ -74,7 +75,7 @@
                 </label>
               </div>
               <div class="form-control mt-6">
-                <button class="btn btn-primary">Add Money</button>
+                <button id="addMoneyBtn" class="btn btn-primary">Add Money</button>
                 <button class="btn btn-outline my-5">Go Back</button>
                 
                 <a href="index.html">
@@ -86,5 +87,6 @@
         </div>
       </div>
     </section>
+    <script src="add-money.js"></script>
   </body>
 </html>
